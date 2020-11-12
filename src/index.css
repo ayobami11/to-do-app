@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(
+        to bottom left,
+        hsl(120, 70%, 65%),
+        hsl(240, 70%, 65%)
+    );
+    height: 100vh;
+}
+
+.App {
+    background: hsl(0, 0%, 20%);
+    border-radius: 0.5em;
+    margin: 2em auto 0;
+    padding: 1em;
+    max-width: 600px;
+    width: 90%;
+}
+
+.ToDoHeader {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.main-header {
+    margin: .25em 0;
+}
+
+.header-intro {
+    font-style: italic;
+}
+
+.btn {
+    border: none;
+    border-radius: 0.3em;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    outline: none;
+    padding: 0.3em 0.7em;
+}
+
+.ToDoForm {
+    display: flex;
+    margin: 1em 0;
+    width: 100%;
+}
+
+.user-input {
+    border-radius: 0.5em;
+    flex: 1 1;
+    outline: none;
+    padding: 0.4em 0.65em;
+}
+
+.add-btn {
+    background: hsl(240, 80%, 60%);
+    margin-left: 0.5em;
+}
+
+.ToDoItem {
+    border-bottom: 2px solid currentColor;
+    color: hsl(0, 0%, 100%);
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.3em 0;
+}
+
+.no-tasks,
+.task-completed {
+    color: hsl(120, 70%, 70%);
+}
+
+.task-completed {
+    text-decoration: line-through;
+}
+
+.task-input {
+    margin-right: 0.5em;
+}
+
+.task-btns {
+    margin: 0.5em 0;
+}
+
+.edit-btn {
+    background: hsl(120, 80%, 60%);
+    margin: 0 0.5em;
+}
+
+.tasks-left {
+    color: hsl(0, 80%, 60%);
+}
+
+.delete-btn,
+.clear-btn {
+    background: hsl(0, 80%, 60%);
+}
+
+.clear-btn {
+    margin-top: 0.5em;
+}
+
+.btn[disabled] {
+    background: hsl(240, 0%, 60%);
+    cursor: not-allowed;
+}
